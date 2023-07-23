@@ -1,0 +1,62 @@
+
+.sale-wine {
+    display: inline-block;
+    margin-right: 5px;
+    width: 278px;
+}
+.product_inner{
+    border: 3px solid #DFDFDF;
+    margin: 0 0 30px;
+}
+.wrap_figure{
+    position: relative;
+}
+.wrap_figure figure{
+    height: 355px;
+    position: relative;
+}
+
+.wrap_figure figure img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 88%;
+    max-height: 100%;
+}
+.text_widget{
+    background: #f2f2f2;
+    padding: 20px;
+}
+.text_widget h3 {
+    text-align: center;
+    font-size: 15px;
+    line-height: 23px;
+    margin: 0 0 10px;
+    font-family: svn-medium, sans-serif;
+}
+
+.text_widget h3 a {
+    color: #262626;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    min-height: 68px;
+    max-height: 70px;
+}
+.pro_price{
+    text-align: center;
+    font-size: 15px;
+    line-height: 23px;
+}
+.listed_price{
+    font-family: svn-bold, sans-serif;
+    color: #ad0707;
+    margin: 0 10px 0 0;
+}
+.sale_price{
+    color: #414141;
+    font-family: svn-medium, sans-serif;
+}

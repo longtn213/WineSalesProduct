@@ -1,38 +1,237 @@
-.App {
-  text-align: center;
+/*Start*/
+/*color : #ad0707*/
+
+
+/*container body*/
+.container {
+    max-width: 1200px;
+    width: 100% !important;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slider_content {
+    position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.slide_img {
+    height: 170px;
+    overflow: hidden;
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.slider_content:hover {
+    transition: ease-in-out;
+    animation-duration: 300s;
+    transform: scale(1.025);
 }
 
-.App-link {
-  color: #61dafb;
+.slide_title {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slide_title a {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 7px 15px;
+    background: #ad0707;
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    margin: 0 0 50px;
+    padding-top: 50px;
+}
+
+.title_box {
+    font-size: 26px;
+    line-height: 46px;
+    font-family: svn-semibold, sans-serif;
+    color: #262626;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+    font-weight: 550;
+}
+
+.title_box::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: #b2b2b2;
+    top: 50%;
+    left: -70px;
+}
+
+.title_box::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: #b2b2b2;
+    top: 50%;
+    right: -70px;
+}
+
+.flash_sale-img {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.title span {
+    color: #636363;
+    display: table;
+    margin: 10px auto 0;
+    text-align: center;
+    font-family: svn-medium, serif;
+    max-width: 686px;
+    font-size: 1.2rem;
+}
+
+/*Category*/
+
+.category_general {
+    padding: 50px 0;
+    background: url("./image/category/ruoutot-vango-bg.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.category_general .col-sm-4 {
+    margin: 0 0 50px;
+}
+
+.category_detail {
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 170px;
+}
+
+.category_item {
+    display: flex;
+    align-items: center;
+}
+
+.category_item span {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.category_img:hover {
+    transition: ease-out;
+    animation-duration: 600s;
+    transform: scale(0.75);
+    cursor: pointer;
+}
+
+/*location*/
+.location_detail {
+    margin: 20px 0 40px;
+}
+
+.location_detail h4 {
+    font-size: 20px;
+    line-height: 28px;
+    color: #ae0808;
+    font-family: svn-bold, sans-serif;
+    font-weight: 550;
+    margin: 0 0 15px;
+}
+
+.location_detail ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.location_detail ul li {
+    position: relative;
+    padding: 0 0 0 25px;
+    margin: 0 0 10px;
+}
+
+.location_detail ul li span {
+    color: #636363;
+    font-family: svn-medium, sans-serif;
+}
+
+.location_detail ul li strong {
+    font-weight: 550;
+    font-family: svn-bold, sans-serif;
+    color: #262626;
+    margin-left: 10px;
+}
+
+.location_detail ul li strong a {
+    color: blue;
+}
+
+.ship {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ship span {
+    font-size: 15px;
+    line-height: 23px;
+    color: #fff;
+    border-radius: 50px;
+    background: #ae0808;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px 25px;
+}
+
+.ship img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*Customer*/
+.slick-slider {
+    margin: 0 !important;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-track {
+    opacity: 1;
+    width: 6240px;
+    transform: translate3d(-3120px, 0px, 0px);
+}
+
+.slick-slide {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 195px;
+}
+
+.slick-slide__img {
+    width: 100%;
+    display: inline-block;
+}
+
+.cus-img {
+    opacity: 1;
 }
