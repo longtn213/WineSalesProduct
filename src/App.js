@@ -15,6 +15,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import Footer from './component/Footer/Footer'
 import ProductWine from './component/ProductWine/ProductWine'
 import {CustomerBrandSlider} from './component/MoveBrand/CustomerBrandSlider'
+import VideoIntro from './component/VideoIntroduction/VideoIntro'
 function App() {
 
 
@@ -90,6 +91,14 @@ function App() {
                         ))
                         }
                     </div>
+                </div>
+                {/*Video Introduction*/}
+                <div>
+                    <div className="title">
+                        <h2 className="title_box">Video</h2>
+                        <span>Nguồn gốc - hương vị của các loại rượu vang nổi tiếng</span>
+                    </div>
+                    <VideoIntro/>
                 </div>
                 <div className="location_general">
                     <div className="title">
