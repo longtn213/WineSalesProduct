@@ -1,5 +1,8 @@
+:root{
+    --height-header : 750px
+}
 .header_search {
-    height: 800px;
+    height: var(--height-header)
 }
 
 .header_navbar {
@@ -99,7 +102,7 @@
 }
 
 .header_navbar_bottom {
-    height: 400px;
+    height: 320px;
 }
 
 /*w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide*/
@@ -148,3 +151,4 @@
     margin: 0 0 10px;
     font-size: 20px;
 }
+

@@ -1,0 +1,176 @@
+.video_general {
+    margin: 0 0 30px;
+}
+.news_details{
+    background: #f7f7f7;
+    display: flex;
+    margin: 0 0 20px;
+}
+.video-left{
+    height: 385px;
+}
+.video-main{
+    position: relative;
+    background: #f7f7f7;
+    margin: 0 0 30px;
+    display: table;
+    height: 385px;
+}
+
+.news-wrap_figure figure{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.news-wrap_figure figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    -webkit-transition-duration: 0.5s; /*Webkit: Thời gian phóng to, nhỏ ảnh*/
+    -moz-transition-duration: 0.5s; /*Như trên*/
+    -o-transition-duration: 0.5s; /*Như trên*/
+    opacity: 1; /*Độ mờ của hình ảnh*/
+    margin: 0 10px 5px 0; /*căn đều giữa ảnh*/
+}
+.news-wrap_figure figure img:hover{
+    -webkit-transform:scale(1.1); /*Webkit: Tăng kích cỡ ảnh lên 1.1 lần*/
+    -moz-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    box-shadow:0px 0px 30px gray; /*Đổ bóng bằng CSS3*/
+    -webkit-box-shadow:0px 0px 30px gray;
+    -moz-box-shadow:0px 0px 30px gray;
+    opacity: 1; /*Độ mờ của hình ảnh*/
+}
+.video-play__icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid #fff;
+    line-height: 92px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 100px;
+    background: red;
+    opacity: .75;
+}
+
+.news-text_widget__left{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent, black);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+}
+.news-text_widget__left h3{
+    margin: 0 0 10px;
+    font-family: svn-semibold,sans-serif;
+}
+.news-text_widget__left h3 span{
+    color: #fff;
+    font-size: 24px;
+    line-height: 39px;
+    font-family: svn-semibold,sans-serif;
+}
+.news-text_widget__left .excerpt{
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.video-details__right{
+    height: 50%;
+    background: #f7f7f7;
+    display: flex;
+    margin: 0 0 20px;
+}
+.wrap-figure__right{
+    width: 65%;
+    position: relative;
+}
+.wrap-figure__right figure{
+    height: 182px;
+}
+
+.wrap-figure__right figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    -webkit-transition-duration: 0.5s; /*Webkit: Thời gian phóng to, nhỏ ảnh*/
+    -moz-transition-duration: 0.5s; /*Như trên*/
+    -o-transition-duration: 0.5s; /*Như trên*/
+    opacity: 1; /*Độ mờ của hình ảnh*/
+    margin: 0 10px 5px 0; /*căn đều giữa ảnh*/
+}
+.wrap-figure__right figure img:hover{
+    -webkit-transform:scale(1.1); /*Webkit: Tăng kích cỡ ảnh lên 1.1 lần*/
+    -moz-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    box-shadow:0px 0px 30px gray; /*Đổ bóng bằng CSS3*/
+    -webkit-box-shadow:0px 0px 30px gray;
+    -moz-box-shadow:0px 0px 30px gray;
+    opacity: 1; /*Độ mờ của hình ảnh*/
+}
+.text-widget_right{
+    padding: 5px 10px;
+    width: 50%;
+}
+.text-widget_right h3{
+    margin: 0 0 0 0;
+}
+.text-widget_right h3 a{
+    font-size: 17px;
+    line-height: 26px;
+    font-family: svn-semibold,sans-serif;
+    color: #000;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.text-right_time{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    line-height: 26px;
+    color: #f00;
+}
+
+.text-right_content{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    line-height: 18px;
+}
+.video-icon_right{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid #fff;
+    line-height: 92px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 100px;
+    background: red;
+    opacity: .75;
+}
+
+.news_read_more{
+    display: table;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 22px;
+    border: 1px solid #ad0707;
+    color: #ad0707;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
