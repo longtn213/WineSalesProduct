@@ -8,9 +8,6 @@
     border: 3px solid #DFDFDF;
     margin: 0 0 30px;
 }
-.product_inner:hover{
-    border-color: #ad0707;
-}
 .wrap_figure{
     position: relative;
 }

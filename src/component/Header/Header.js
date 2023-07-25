@@ -3,21 +3,19 @@ import logo from "../../image/logo/winelogo.jpg";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import HomeIcon from "@mui/icons-material/Home";
+import {MdChevronLeft, MdChevronRight} from "react-icons/md";
 import {data} from "../../mockData";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 
 function Header () {
-    const settings = {
-        dots: false,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        slidesToShow: 4,
-        slidesToScroll: 1,
+    const slideLeft = () => {
+        var slider = document.getElementById('slider');
+        slider.scrollLeft = slider.scrollLeft - 1000;
     };
 
+    const slideRight = () => {
+        var slider = document.getElementById('slider');
+        slider.scrollLeft = slider.scrollLeft + 1000;
+    };
     return (
         <div className="header_search">
             <div className="header_navbar">
@@ -55,18 +53,20 @@ function Header () {
             </div>
             <div className="header_navbar_bottom">
                 <div className='relative flex items-center'>
+                    <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft}
+                                   size={40}/>
                     <div id='slider' className='slider'
                          style={{overflow: 'hidden'}}
                     >
-                        <Slider {...settings}>
-                            {data.map((item) => (
-                                <img key={item.id}
-                                     className='slider-item'
-                                     src={item.img}
-                                     alt='banner'/>
-                            ))}
-                        </Slider>
+                        {data.map((item) => (
+                            <img key={item.id}
+                                 className='slider-item'
+                                 src={item.img}
+                                 alt='banner'/>
+                        ))}
                     </div>
+                    <MdChevronRight className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideRight}
+                                    size={40}/>
                 </div>
             </div>
             <div className="header_intro">
