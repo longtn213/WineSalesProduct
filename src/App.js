@@ -16,6 +16,7 @@ import Footer from './component/Footer/Footer'
 import ProductWine from './component/ProductWine/ProductWine'
 import {CustomerBrandSlider} from './component/MoveBrand/CustomerBrandSlider'
 import VideoIntro from "./component/VideoIntroduction/VideoIntro";
+import FacebookMsg from "./component/FacebookMsg/FacebookMsg";
 function App() {
 
 
@@ -152,6 +153,7 @@ function App() {
                 </div>
             </div>
             <Footer/>
+            <FacebookMsg/>
         </div>
     );
 }
