@@ -17,6 +17,7 @@ import ProductWine from './component/ProductWine/ProductWine'
 import {CustomerBrandSlider} from './component/MoveBrand/CustomerBrandSlider'
 import VideoIntro from "./component/VideoIntroduction/VideoIntro";
 import FacebookMsg from "./component/FacebookMsg/FacebookMsg";
+
 function App() {
 
 
@@ -24,6 +25,10 @@ function App() {
         <div className="App">
             <Header/>
             <div className="container">
+                <div className="body_notification">
+                        <h2> Trang Web đang bảo trì </h2>
+                        <p> Chúng tôi thành thật xin lỗi về sự bất tiện này! </p>
+                </div>
                 <div className="row intro">
                     <div className="columns-xs-6 col-sm-3">
                         <div className="slider_content">
@@ -154,6 +159,7 @@ function App() {
             </div>
             <Footer/>
             <FacebookMsg/>
+
         </div>
     );
 }

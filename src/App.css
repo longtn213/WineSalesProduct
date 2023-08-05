@@ -1,13 +1,35 @@
 /*Start*/
 /*color : #ad0707*/
 
-
 /*container body*/
 .container {
     max-width: 1200px;
     width: 100% !important;
     margin: 0 auto;
 }
+.body_notification {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    color: #ad0707;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.body_notification h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 15px
+}
+
+.body_notification p {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
 
 .slider_content {
     position: relative;
