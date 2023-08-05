@@ -8,8 +8,6 @@
     margin: 0 auto;
 }
 .body_notification {
-    position: absolute;
-    z-index: 1;
     width: 100%;
     text-align: center;
     color: #ad0707;
