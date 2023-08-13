@@ -16,18 +16,17 @@ import Footer from './component/Footer/Footer'
 import ProductWine from './component/ProductWine/ProductWine'
 import {CustomerBrandSlider} from './component/MoveBrand/CustomerBrandSlider'
 import VideoIntro from "./component/VideoIntroduction/VideoIntro";
-import FacebookMsg from "./component/FacebookMsg/FacebookMsg";
+// import FacebookMsg from "./component/FacebookMsg/FacebookMsg";
+import ModalDialog from "./component/ModalDialog/ModalDialog";
 
 function App() {
-
 
     return (
         <div className="App">
             <Header/>
             <div className="container">
-                <div className="body_notification">
-                        <h2> Trang Web đang bảo trì </h2>
-                        <p> Chúng tôi thành thật xin lỗi về sự bất tiện này! </p>
+                <div className="container mt-3">
+                    <ModalDialog />
                 </div>
                 <div className="row intro">
                     <div className="columns-xs-6 col-sm-3">
@@ -85,7 +84,7 @@ function App() {
                     </div>
                     <div className="row">
                         {category_data.map((categoryItem) => (
-                            <div className="col-sm-4">
+                            <div className="col-sm-4" key={categoryItem.id}>
                                 <div className="category_detail">
                                     <div className="category_item">
                                         <img className="category_img" id={categoryItem.id} src={categoryItem.img}
@@ -113,9 +112,10 @@ function App() {
                         </h2>
                         <span>Quý khách mua hàng có thể liên hệ khu vực gần nhất</span>
                     </div>
+
                     <div className="row">
                         {locationData.map((locationItem) => (
-                            <div className="col-sm-6">
+                            <div className="col-sm-6" key={locationItem.id}>
                                 <div className="location_detail" id={locationItem.id}>
                                     <h4>{locationItem.locationName}</h4>
                                     <ul>
@@ -158,7 +158,7 @@ function App() {
                 </div>
             </div>
             <Footer/>
-            <FacebookMsg/>
+            {/*<FacebookMsg/>*/}
 
         </div>
     );

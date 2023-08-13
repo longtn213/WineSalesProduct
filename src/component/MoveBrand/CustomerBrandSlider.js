@@ -17,8 +17,8 @@ export const CustomerBrandSlider = () => {
             <Slider {...settings}>
                 {
                     CustomBrandData.map((customItem) => (
-                        <div className="cus-content">
-                            <img key={customItem.id} src={customItem.img} alt='/'/>
+                        <div className="cus-content" id={customItem.id} key={customItem.id}>
+                            <img src={customItem.img} alt='/'/>
                         </div>
 
                     ))
