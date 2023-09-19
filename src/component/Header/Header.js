@@ -6,23 +6,16 @@ import HomeIcon from "@mui/icons-material/Home";
 import {data} from "../../mockData";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 
 function Header () {
-    const settings = {
-        dots: false,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-    };
 
     return (
         <div className="header_search">
             <div className="header_navbar">
                 <div className="header_navbar_contact">
-                    <div className="header_navbar_contact_call">Liên hệ</div>
+                    <div className="header_navbar-company_name_Vietname">CÔNG TY CỔ PHẦN THƯƠNG MAI DỊCH VỤ VÀ ĐẦU TƯ QUỐC TẾ Ý-VIỆT</div>
+                    <div className="header_navbar-company_name_English">y - viet service trading and international investment joint stock company</div>
+                    <div className="header_navbar-company_address">Địa chỉ : Số 9 Liễu Giai, Ba Đình, Hà Nội</div>
                 </div>
                 <div className="header_navbar_logo">
                     <img className="header_navbar_logo-img" src={logo} alt={logo}/>
@@ -53,26 +46,25 @@ function Header () {
                     <div>A-Z</div>
                 </div>
             </div>
-            <div className="header_navbar_bottom">
+                <div className="header_navbar_bottom">
                 <div className='relative flex items-center'>
                     <div id='slider' className='slider'
                          style={{overflow: 'hidden'}}
                     >
-                        <Slider {...settings}>
                             {data.map((item) => (
                                 <img key={item.id}
                                      className='slider-item'
                                      src={item.img}
                                      alt='banner'/>
                             ))}
-                        </Slider>
                     </div>
                 </div>
             </div>
             <div className="header_intro">
                 <div className="header_intro-header">
-                    <h2> IV Come - Rượu vang nhập khẩu chính hãng. </h2>
+                    <h2> IVCom - Rượu vang nhập khẩu chính hãng. </h2>
                     <p> Nơi quy tụ những dòng vang nổi tiếng </p>
+                    <h1>" Mang cảm xúc từ Sicilia - Italy đến Việt Nam "</h1>
                 </div>
             </div>
         </div>

@@ -30,12 +30,14 @@ function App() {
                 </div>
                 <div className="row intro">
                     <div className="columns-xs-6 col-sm-3">
-                        <div className="slider_content">
-                            <img className="slide_img" src={slider1} alt='/'/>
-                            <span className="slide_title">
+                        <a href="https://www.facebook.com/YVietIVCOM">
+                            <div className="slider_content" >
+                                <img className="slide_img" src={slider1} alt='/'/>
+                                <span className="slide_title">
                                 <a href='/'> Liên hệ</a>
-                            </span>
-                        </div>
+                                </span>
+                            </div>
+                        </a>
                     </div>
                     <div className="columns-xs-6 col-sm-3">
                         <div className="slider_content">
@@ -120,22 +122,16 @@ function App() {
                                     <h4>{locationItem.locationName}</h4>
                                     <ul>
                                         <li>
-                                            <LocationOnIcon/>
-                                            <strong>{locationItem.locationShop}</strong>
-                                            <span>{locationItem.locationAddress}</span>
+                                            <LocationOnIcon />
+                                            <div className="location_infor">
+                                                <strong>{locationItem.locationShop}</strong>
+                                                <span className="location_address">{locationItem.locationAddress}</span>
+                                            </div>
                                         </li>
                                         <li>
                                             <PhoneIcon/>
                                             <strong>
-                                                <a href={locationItem.phoneNumber1}>{locationItem.phoneNumber1} - </a>
-
-                                                <a href={locationItem.phoneNumber2}>{locationItem.phoneNumber2}</a>
-                                            </strong>
-                                        </li>
-                                        <li>
-                                            <MailIcon/>
-                                            <strong>
-                                                <a href={locationItem.mail}>{locationItem.mail}</a>
+                                                <a href={locationItem.phoneNumber1}>{locationItem.phoneNumber1}  </a>
                                             </strong>
                                         </li>
                                     </ul>

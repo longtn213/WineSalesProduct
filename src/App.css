@@ -177,20 +177,27 @@
 
 .location_detail ul li {
     position: relative;
-    padding: 0 0 0 25px;
+    padding: 0 0 5px 25px;
     margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+}
+.location_infor{
+
 }
 
 .location_detail ul li span {
     color: #636363;
     font-family: svn-medium, sans-serif;
 }
+.location_address{
+    line-height: 14px;
+}
 
 .location_detail ul li strong {
     font-weight: 550;
     font-family: svn-bold, sans-serif;
     color: #262626;
-    margin-left: 10px;
 }
 
 .location_detail ul li strong a {

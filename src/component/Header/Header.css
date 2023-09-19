@@ -18,8 +18,32 @@
 .header_navbar_contact {
     flex: 1;
     position: relative;
+    flex-wrap: wrap;
 }
 
+.header_navbar-company_name_Vietname{
+    font-size: 16px;
+    color: #ad0707;
+    text-transform: uppercase;
+    margin-top: -16px;
+    margin-bottom: 12px;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: 600;
+}
+
+.header_navbar-company_name_English{
+    font-size: 16px;
+    color: #ad0707;
+    text-transform: uppercase;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: 600;
+}
+.header_navbar-company_address{
+    font-family: "Times New Roman",svn-medium, sans-serif;
+    font-size: 16px;
+    margin-top: 16px;
+    color: #ad0707;
+}
 .header_navbar_contact_call {
     padding: 10px 5px;
     border-radius: 6px;
@@ -152,3 +176,8 @@
     font-size: 20px;
 }
 
+.header_intro-header h1 {
+    font-size: 20px;
+    font-style: italic;
+    font-family: "Times New Roman", sans-serif;
+}
